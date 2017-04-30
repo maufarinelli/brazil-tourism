@@ -1,0 +1,14 @@
+{
+  "name": "brazil-tourism-jekyll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mauricio Farinelli",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

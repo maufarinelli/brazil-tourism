@@ -1,0 +1,24 @@
+---
+---
+
+@import "bootstrap";
+
+@import "header";
+@import "footer";
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: $screen-xs-max) {
+  .row > [class*="col-"] {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .row > [class*="col-"] {
+    margin-bottom: 30px;
+  }
+}
+
