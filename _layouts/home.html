@@ -19,8 +19,8 @@
                         <source srcset="{{site.baseurl}}/assets/img/{{page.images1[1]}}" media="(min-width: 1200px)">
                         <img src="{{site.baseurl}}/assets/img/{{page.images1[2]}}" alt="Dive">
                     </picture>
-                    <h2>{{ page.subtitles[0] }}</h2>
-                    <p>{{ page.sections[0] }}</p>
+                    <h2>{% contentblock subtitle_1 %}</h2>
+                    <p>{% contentblock section_1 %}</p>
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <picture>
@@ -28,8 +28,8 @@
                         <source srcset="{{site.baseurl}}/assets/img/{{page.images2[1]}}" media="(min-width: 1200px)">
                         <img src="{{site.baseurl}}/assets/img/{{page.images2[2]}}" alt="Dive">
                     </picture>
-                    <h2>{{ page.subtitles[1] }}</h2>
-                    <p>{{ page.sections[1] }}</p>
+                    <h2>{% contentblock subtitle_2 %}</h2>
+                    <p>{% contentblock section_2 %}</p>
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <picture>
@@ -37,8 +37,8 @@
                         <source srcset="{{site.baseurl}}/assets/img/{{page.images3[1]}}" media="(min-width: 1200px)">
                         <img src="{{site.baseurl}}/assets/img/{{page.images3[2]}}" alt="Dive">
                     </picture>
-                    <h2>{{ page.subtitles[2] }}</h2>
-                    <p>{{ page.sections[2] }}</p>
+                    <h2>{% contentblock subtitle_3 %}</h2>
+                    <p>{% contentblock section_3 %}</p>
                 </div>
             </div>
         </div>

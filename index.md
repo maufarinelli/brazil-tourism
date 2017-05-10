@@ -1,16 +1,5 @@
 ---
-title: Brazil Tourism
 layout: home
-
-subtitles:
-- Dive
-- Surf
-- Sailing
-
-sections:
-- 1st, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget fermentum nulla, ac mollis arcu. Praesent ornare, turpis vel consectetur imperdiet, mauris quam iaculis nisi, in lobortis purus nunc ac elit. Quisque tortor mi, euismod sed mi a, rhoncus tempus lacus.
-- 2nd, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget fermentum nulla, ac mollis arcu. Praesent ornare, turpis vel consectetur imperdiet, mauris quam iaculis nisi, in lobortis purus nunc ac elit. Quisque tortor mi, euismod sed mi a, rhoncus tempus lacus.
-- 3rd, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget fermentum nulla, ac mollis arcu. Praesent ornare, turpis vel consectetur imperdiet, mauris quam iaculis nisi, in lobortis purus nunc ac elit. Quisque tortor mi, euismod sed mi a, rhoncus tempus lacus.
 
 images1:
 - dive-brasil-290x193.jpg
@@ -28,3 +17,5 @@ images3:
 - sailing-brasil-500x334.jpg
 
 ---
+
+{% translate_file index.md %}

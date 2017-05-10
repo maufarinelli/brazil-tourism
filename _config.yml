@@ -28,6 +28,7 @@ github_username:  jekyll
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-multiple-languages-plugin
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -35,3 +36,10 @@ sass:
     sass_dir: _sass
 
 exclude: ["node_modules", "package.json"]
+
+languages: ["en"]
+# languages: ["en", "fr", "pt"] to activate more languages
+exclude_from_localizations: ["javascript", "images", "css"]
+
+# WINDOWS cmd in UTF-8
+# in order to run cmd in utf-8 mode : https://superuser.com/questions/269818/change-default-code-page-of-windows-console-to-utf-8

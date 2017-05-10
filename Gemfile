@@ -26,3 +26,13 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Jekyll Multiple Languages plugin
+# https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin
+gem 'jekyll-multiple-languages-plugin'
+
+# jekyll-contentblocks
+# https://github.com/rustygeldmacher/jekyll-contentblocks
+group :jekyll_plugins do
+    gem 'jekyll-contentblocks'
+end
+
