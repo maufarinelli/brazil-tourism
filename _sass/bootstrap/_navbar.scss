@@ -18,7 +18,8 @@
   @include clearfix;
 
   @media (min-width: $grid-float-breakpoint) {
-    border-radius: $navbar-border-radius;
+    border-bottom-left-radius: $navbar-border-radius;
+    border-bottom-right-radius: $navbar-border-radius;
   }
 }
 

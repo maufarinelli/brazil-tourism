@@ -35,6 +35,10 @@ exclude:
 sass:
     sass_dir: _sass
 
+permalink: /:title/
+
+include: ["_pages"]
+
 exclude: ["node_modules", "package.json"]
 
 languages: ["en"]

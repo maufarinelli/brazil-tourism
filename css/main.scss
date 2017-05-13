@@ -6,6 +6,8 @@
 @import "header";
 @import "footer";
 
+$brand-darkblue: #132c47;
+
 img {
   max-width: 100%;
 }
@@ -22,3 +24,7 @@ img {
   }
 }
 
+.container-blue {
+  background-color: $brand-darkblue;
+  color: $component-active-color;
+}

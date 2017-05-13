@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<link rel="stylesheet" href="{{site.baseurl}}/css/home-city.css">
+</head>
+
+<body>
+{% include header.html %}
+<main class="page-content" aria-label="Content">
+    <div class="top_photo">
+        <img src="{{site.baseurl}}/assets/img/{{page.images1[0]}}" alt="">
+    </div>
+
+    <div class="container container-blue">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                <h2>{% contentblock subtitle_how_to %}</h2>
+                <p>{% contentblock summary_how_to %}</p>
+                <a href="#">{% contentblock cta_how_to %}</a>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                <h2>{% contentblock subtitle_things_to_do %}</h2>
+                <p>{% contentblock summary_things_to_do %}</p>
+                <a href="#">{% contentblock cta_things_to_do %}</a>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                <h2>{% contentblock subtitle_where_to_stay %}</h2>
+                <p>{% contentblock summary_where_to_stay %}</p>
+                <a href="#">{% contentblock cta_where_to_stay %}</a>
+            </div>
+        </div>
+    </div>
+
+</main>
+{% include footer.html %}
+</body>
+</html>
