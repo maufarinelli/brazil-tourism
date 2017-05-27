@@ -11,7 +11,7 @@ How to get there
 Morbi mollis sapien in enim molestie, et suscipit felis pharetra. Nunc sed posuere enim. Morbi quis rhoncus nisi. Sed enim nulla, commodo nec dui ac.
 {% endcontentfor%}
 {% contentfor cta_how_to %}
-Get info
+Get info >>
 {% endcontentfor%}
 
 
@@ -22,7 +22,7 @@ Things to do
 Donec dictum, augue eget lobortis placerat, enim urna sodales diam, vitae sagittis massa tellus in justo. Fusce lorem arcu, dictum nec enim elementum, pellentesque facilisis nisi.
 {% endcontentfor%}
 {% contentfor cta_things_to_do %}
-More
+More >>
 {% endcontentfor%}
 
 
@@ -33,5 +33,5 @@ Where to stay
 Duis sed risus euismod, efficitur mi vel, consequat arcu. Aenean a urna urna. Curabitur congue orci ut augue eleifend, condimentum consequat urna condimentum.
 {% endcontentfor%}
 {% contentfor cta_where_to_stay %}
-Find out
+Find out >>
 {% endcontentfor%}

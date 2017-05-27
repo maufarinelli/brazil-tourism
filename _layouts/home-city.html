@@ -7,29 +7,34 @@
 <body>
 {% include header.html %}
 <main class="page-content" aria-label="Content">
-    <div class="top_photo">
+    <section class="top_photo">
         <img src="{{site.baseurl}}/assets/img/{{page.images1[0]}}" alt="">
-    </div>
+    </section>
 
-    <div class="container container-blue">
-        <div class="row">
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
-                <h2>{% contentblock subtitle_how_to %}</h2>
-                <p>{% contentblock summary_how_to %}</p>
-                <a href="#">{% contentblock cta_how_to %}</a>
-            </div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
-                <h2>{% contentblock subtitle_things_to_do %}</h2>
-                <p>{% contentblock summary_things_to_do %}</p>
-                <a href="#">{% contentblock cta_things_to_do %}</a>
-            </div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
-                <h2>{% contentblock subtitle_where_to_stay %}</h2>
-                <p>{% contentblock summary_where_to_stay %}</p>
-                <a href="#">{% contentblock cta_where_to_stay %}</a>
+    <section class="page-submenu container-blue padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                    <span class="page-submenu-icon glyphicon glyphicon-road"></span>
+                    <h2 class="page-submenu-title">{% contentblock subtitle_how_to %}</h2>
+                    <p>{% contentblock summary_how_to %}</p>
+                    <a class="btn btn-primary" href="#">{% contentblock cta_how_to %}</a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                    <span class="page-submenu-icon glyphicon glyphicon-camera"></span>
+                    <h2 class="page-submenu-title">{% contentblock subtitle_things_to_do %}</h2>
+                    <p>{% contentblock summary_things_to_do %}</p>
+                    <a class="btn btn-primary" href="#">{% contentblock cta_things_to_do %}</a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                    <span class="page-submenu-icon glyphicon glyphicon-home"></span>
+                    <h2 class="page-submenu-title">{% contentblock subtitle_where_to_stay %}</h2>
+                    <p>{% contentblock summary_where_to_stay %}</p>
+                    <a class="btn btn-primary" href="#">{% contentblock cta_where_to_stay %}</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
 </main>
 {% include footer.html %}

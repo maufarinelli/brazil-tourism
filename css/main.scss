@@ -1,12 +1,12 @@
 ---
 ---
 
-@import "bootstrap";
+@import 'bootstrap';
 
-@import "header";
-@import "footer";
+@import 'custom-variables';
+@import 'header';
+@import 'footer';
 
-$brand-darkblue: #132c47;
 
 img {
   max-width: 100%;
@@ -22,6 +22,23 @@ img {
   .row > [class*="col-"] {
     margin-bottom: 30px;
   }
+}
+
+// Utilities
+.margin-top {
+  margin-top: $vertical-margin;
+}
+
+.padding-top {
+  padding-top: $vertical-margin;
+}
+
+.margin-bottom {
+  margin-bottom: $vertical-margin;
+}
+
+.padding-bottom {
+  padding-bottom: $vertical-margin;
 }
 
 .container-blue {

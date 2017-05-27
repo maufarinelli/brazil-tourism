@@ -1,5 +1,33 @@
+@import 'bootstrap';
+@import 'custom-variables';
+
 .top_photo {
   max-height: 450px;
   overflow: hidden;
-  margin-bottom: 30px;
+}
+
+.page-submenu {
+  .page-submenu-icon {
+    display: block;
+    text-align: center;
+    font-size: $font-size-h1;
+
+    &:before {
+      display: inline-block;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      background-color: lighten($brand-darkblue, 15%);
+    }
+
+    &.glyphicon-road:before,
+    &.glyphicon-home:before,
+    &.glyphicon-camera:before {
+      padding-top: 18px;
+    }
+  }
+
+  .page-submenu-title {
+    text-align: center;
+  }
 }
