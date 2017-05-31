@@ -8,7 +8,8 @@
   },
   "author": "Mauricio Farinelli",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "lodash": "^4.17.4",
     "bootstrap": "^3.3.7"
   }
 }

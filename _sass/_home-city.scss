@@ -27,7 +27,13 @@
     }
   }
 
-  .page-submenu-title {
+  .page-subtitle {
     text-align: center;
+  }
+
+  .page-submenu-cta {
+    p {
+      margin-bottom: 0;
+    }
   }
 }

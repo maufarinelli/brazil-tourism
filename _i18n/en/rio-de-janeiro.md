@@ -11,7 +11,7 @@ How to get there
 Morbi mollis sapien in enim molestie, et suscipit felis pharetra. Nunc sed posuere enim. Morbi quis rhoncus nisi. Sed enim nulla, commodo nec dui ac.
 {% endcontentfor%}
 {% contentfor cta_how_to %}
-Get info >>
+Get info
 {% endcontentfor%}
 
 
@@ -22,7 +22,7 @@ Things to do
 Donec dictum, augue eget lobortis placerat, enim urna sodales diam, vitae sagittis massa tellus in justo. Fusce lorem arcu, dictum nec enim elementum, pellentesque facilisis nisi.
 {% endcontentfor%}
 {% contentfor cta_things_to_do %}
-More >>
+More
 {% endcontentfor%}
 
 
@@ -33,5 +33,30 @@ Where to stay
 Duis sed risus euismod, efficitur mi vel, consequat arcu. Aenean a urna urna. Curabitur congue orci ut augue eleifend, condimentum consequat urna condimentum.
 {% endcontentfor%}
 {% contentfor cta_where_to_stay %}
-Find out >>
+Find out
 {% endcontentfor%}
+
+
+{% contentfor things_to_do_subtitle_1 %}
+Dive
+{% endcontentfor %}
+
+{% contentfor things_to_do_subtitle_2 %}
+Surf
+{% endcontentfor %}
+
+{% contentfor things_to_do_subtitle_3 %}
+Sailing
+{% endcontentfor %}
+
+{% contentfor things_to_do_section_1 %}
+1 (first), Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget fermentum nulla, ac mollis arcu. Praesent ornare, turpis vel consectetur imperdiet, mauris quam iaculis nisi, in lobortis purus nunc ac elit. Quisque tortor mi, euismod sed mi a, rhoncus tempus lacus.
+{% endcontentfor %}
+
+{% contentfor things_to_do_section_2 %}
+2 (second), Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget fermentum nulla, ac mollis arcu. Praesent ornare, turpis vel consectetur imperdiet, mauris quam iaculis nisi, in lobortis purus nunc ac elit. Quisque tortor mi, euismod sed mi a, rhoncus tempus lacus.
+{% endcontentfor %}
+
+{% contentfor things_to_do_section_3 %}
+3 (third), Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget fermentum nulla, ac mollis arcu. Praesent ornare, turpis vel consectetur imperdiet, mauris quam iaculis nisi, in lobortis purus nunc ac elit. Quisque tortor mi, euismod sed mi a, rhoncus tempus lacus.
+{% endcontentfor %}

@@ -39,7 +39,7 @@ permalink: /:title/
 
 include: ["_pages"]
 
-exclude: ["node_modules", "package.json"]
+exclude: ["package.json"]
 
 languages: ["en"]
 # languages: ["en", "fr", "pt"] to activate more languages

@@ -16,27 +16,69 @@
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <span class="page-submenu-icon glyphicon glyphicon-road"></span>
-                    <h2 class="page-submenu-title">{% contentblock subtitle_how_to %}</h2>
+                    <h2 class="page-subtitle">{% contentblock subtitle_how_to %}</h2>
                     <p>{% contentblock summary_how_to %}</p>
-                    <a class="btn btn-primary" href="#">{% contentblock cta_how_to %}</a>
+                    <a class="btn btn-primary page-submenu-cta" href="#">{% contentblock cta_how_to %}</a>
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <span class="page-submenu-icon glyphicon glyphicon-camera"></span>
-                    <h2 class="page-submenu-title">{% contentblock subtitle_things_to_do %}</h2>
+                    <h2 class="page-subtitle">{% contentblock subtitle_things_to_do %}</h2>
                     <p>{% contentblock summary_things_to_do %}</p>
-                    <a class="btn btn-primary" href="#">{% contentblock cta_things_to_do %}</a>
+                    <a class="btn btn-primary page-submenu-cta" href="#">{% contentblock cta_things_to_do %}</a>
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <span class="page-submenu-icon glyphicon glyphicon-home"></span>
-                    <h2 class="page-submenu-title">{% contentblock subtitle_where_to_stay %}</h2>
+                    <h2 class="page-subtitle">{% contentblock subtitle_where_to_stay %}</h2>
                     <p>{% contentblock summary_where_to_stay %}</p>
-                    <a class="btn btn-primary" href="#">{% contentblock cta_where_to_stay %}</a>
+                    <a class="btn btn-primary page-submenu-cta" href="#">{% contentblock cta_where_to_stay %}</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="map" data-map="rio" style="height: 400px;"></section>
+
+    <section class="page-3columns container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <h2>{% contentblock subtitle_things_to_do %}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                <picture>
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images2[0]}}" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images2[1]}}" media="(min-width: 1200px)">
+                    <img src="{{site.baseurl}}/assets/img/{{page.images[2]}}" alt="Dive">
+                </picture>
+                <h2 class="page-subtitle">{% contentblock things_to_do_subtitle_1 %}</h2>
+                <p>{% contentblock things_to_do_section_1 %}</p>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                <picture>
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images3[0]}}" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images3[1]}}" media="(min-width: 1200px)">
+                    <img src="{{site.baseurl}}/assets/img/{{page.images3[2]}}" alt="Dive">
+                </picture>
+                <h2 class="page-subtitle">{% contentblock things_to_do_subtitle_2 %}</h2>
+                <p>{% contentblock things_to_do_section_2 %}</p>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                <picture>
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images4[0]}}" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images4[1]}}" media="(min-width: 1200px)">
+                    <img src="{{site.baseurl}}/assets/img/{{page.images4[2]}}" alt="Dive">
+                </picture>
+                <h2 class="page-subtitle">{% contentblock things_to_do_subtitle_3 %}</h2>
+                <p>{% contentblock things_to_do_section_3 %}</p>
+            </div>
+        </div>
+    </section>
 </main>
+<script async defer src="{{site.baseurl}}/assets/js/maps.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMlNOTz98gOX5e2uU90hpl8Cl0Sp3q_g4&callback=initMap">
+</script>
 {% include footer.html %}
 </body>
 </html>
