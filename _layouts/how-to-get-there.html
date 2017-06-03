@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+</head>
+
+<body>
+{% include header.html %}
+<main class="page-content" aria-label="Content">
+    <section class="top_photo">
+        <img src="{{site.baseurl}}/assets/img/{{page.image1}}" alt="">
+    </section>
+
+    <section class="page-section container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <picture>
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images1[0]}}" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images1[1]}}" media="(min-width: 1200px)">
+                    <img src="{{site.baseurl}}/assets/img/{{page.images1[2]}}" alt="">
+                </picture>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h2>{% contentblock title-first-step no-convert %}</h2>
+                <p>{% contentblock content-first-step no-convert %}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h2>{% contentblock title-second-step no-convert %}</h2>
+                <p>{% contentblock content-second-step no-convert %}</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <picture>
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images2[0]}}" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images2[1]}}" media="(min-width: 1200px)">
+                    <img src="{{site.baseurl}}/assets/img/{{page.images2[2]}}" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <picture>
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images3[0]}}" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images3[1]}}" media="(min-width: 1200px)">
+                    <img src="{{site.baseurl}}/assets/img/{{page.images3[2]}}" alt="">
+                </picture>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h2>{% contentblock title-third-step no-convert %}</h2>
+                <p>{% contentblock content-third-step no-convert %}</p>
+            </div>
+        </div>
+    </section>
+</main>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMlNOTz98gOX5e2uU90hpl8Cl0Sp3q_g4&callback=initMap">
+</script>
+{% include footer.html %}
+</body>
+</html>
