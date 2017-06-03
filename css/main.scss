@@ -48,6 +48,10 @@ img {
   color: $component-active-color;
 }
 
+.container-lightgray {
+  background-color: $brand-lightgray;
+}
+
 .page-subtitle {
   text-align: center;
 }
@@ -68,11 +72,17 @@ img {
   height: $page-section-bg-photo-height;
 
   .page-content-overlay {
-    width: 900px;
+    width: $screen-xs-max;
     margin: 0 auto;
     margin-top: 200px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     color: $body-bg;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .page-content-overlay {
+      width: 100%;
+    }
   }
 }

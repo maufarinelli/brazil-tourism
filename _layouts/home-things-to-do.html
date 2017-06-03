@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<link rel="stylesheet" href="{{site.baseurl}}/css/home-things-to-do.css">
+</head>
+
+<body>
+{% include header.html %}
+<main class="page-content" aria-label="Content">
+    <section class="container-blue page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <picture>
+                        <source srcset="{{site.baseurl}}/assets/img/{{page.images1[0]}}" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="{{site.baseurl}}/assets/img/{{page.images1[1]}}" media="(min-width: 1200px)">
+                        <img src="{{site.baseurl}}/assets/img/{{page.images1[2]}}" alt="">
+                    </picture>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h1>{% contentblock title-featured-things no-convert %}</h1>
+                    <p>{% contentblock content-featured-things no-convert %}</p>
+                    <a class="btn btn-primary" href="#">{% contentblock cta-featured-things no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <picture>
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images2[0]}}" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images2[1]}}" media="(min-width: 1200px)">
+                    <img src="{{site.baseurl}}/assets/img/{{page.images2[2]}}" alt="">
+                </picture>
+                <h2 class="page-subtitle">{% contentblock title-second-line1-things no-convert %}</h2>
+                <p>{% contentblock content-second-line1-things no-convert %}</p>
+                <a class="btn btn-primary" href="#">{% contentblock cta-second-line1-things no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <picture>
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images3[0]}}" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="{{site.baseurl}}/assets/img/{{page.images3[1]}}" media="(min-width: 1200px)">
+                    <img src="{{site.baseurl}}/assets/img/{{page.images3[2]}}" alt="">
+                </picture>
+                <h2 class="page-subtitle">{% contentblock title-second-line2-things no-convert %}</h2>
+                <p>{% contentblock content-second-line2-things no-convert %}</p>
+                <a class="btn btn-primary" href="#">{% contentblock cta-second-line2-things no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section container-lightgray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <img src="{{site.baseurl}}/assets/img/{{page.image4}}" alt="">
+                    <h2 class="page-subtitle">{% contentblock title-third-line1-things no-convert %}</h2>
+                    <p>{% contentblock content-third-line1-things no-convert %}</p>
+                    <a href="#">{% contentblock cta-third-line1-things no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="{{site.baseurl}}/assets/img/{{page.image5}}" alt="">
+                    <h2 class="page-subtitle">{% contentblock title-third-line2-things no-convert %}</h2>
+                    <p>{% contentblock content-third-line2-things no-convert %}</p>
+                    <a href="#">{% contentblock cta-third-line2-things no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="{{site.baseurl}}/assets/img/{{page.image6}}" alt="">
+                    <h2 class="page-subtitle">{% contentblock title-third-line3-things no-convert %}</h2>
+                    <p>{% contentblock content-third-line3-things no-convert %}</p>
+                    <a href="#">{% contentblock cta-third-line3-things no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="{{site.baseurl}}/assets/img/{{page.image7}}" alt="">
+                    <h2 class="page-subtitle">{% contentblock title-third-line4-things no-convert %}</h2>
+                    <p>{% contentblock content-third-line4-things no-convert %}</p>
+                    <a href="#">{% contentblock cta-third-line4-things no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% include footer.html %}
+</body>
+</html>

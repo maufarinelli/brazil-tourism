@@ -2,7 +2,7 @@
 
 ---
 
-{% contentfor title %}Rio de Janeiro{% endcontentfor%}
+{% contentfor title %}Brazil Tourism{% endcontentfor%}
 
 {% contentfor subtitle_how_to %}
 How to get there
