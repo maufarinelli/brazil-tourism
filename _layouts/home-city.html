@@ -2,6 +2,7 @@
 <html lang="en">
 {% include head.html %}
 <link rel="stylesheet" href="{{site.baseurl}}/css/home-city.css">
+<script src="{{site.baseurl}}/assets/js/maps.js"></script>
 </head>
 
 <body>
@@ -11,26 +12,32 @@
         <img src="{{site.baseurl}}/assets/img/{{page.images1[0]}}" alt="">
     </section>
 
-    <section class="page-submenu container-blue padding-top">
+    <section class="page-submenu container-blue page-section">
         <div class="container">
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <span class="page-submenu-icon glyphicon glyphicon-road"></span>
-                    <h2 class="page-subtitle">{% contentblock subtitle_how_to %}</h2>
-                    <p>{% contentblock summary_how_to %}</p>
-                    <a class="btn btn-primary page-submenu-cta" href="#">{% contentblock cta_how_to %}</a>
+                    <h2 class="page-subtitle">{% contentblock subtitle_how_to no-convert %}</h2>
+                    <p>{% contentblock summary_how_to no-convert %}</p>
+                    <div class="page-cta">
+                        <a class="btn btn-primary" href="#">{% contentblock cta_how_to no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <span class="page-submenu-icon glyphicon glyphicon-camera"></span>
-                    <h2 class="page-subtitle">{% contentblock subtitle_things_to_do %}</h2>
-                    <p>{% contentblock summary_things_to_do %}</p>
-                    <a class="btn btn-primary page-submenu-cta" href="#">{% contentblock cta_things_to_do %}</a>
+                    <h2 class="page-subtitle">{% contentblock subtitle_things_to_do no-convert %}</h2>
+                    <p>{% contentblock summary_things_to_do no-convert %}</p>
+                    <div class="page-cta">
+                        <a class="btn btn-primary" href="#">{% contentblock cta_things_to_do no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <span class="page-submenu-icon glyphicon glyphicon-home"></span>
-                    <h2 class="page-subtitle">{% contentblock subtitle_where_to_stay %}</h2>
-                    <p>{% contentblock summary_where_to_stay %}</p>
-                    <a class="btn btn-primary page-submenu-cta" href="#">{% contentblock cta_where_to_stay %}</a>
+                    <h2 class="page-subtitle">{% contentblock subtitle_where_to_stay no-convert %}</h2>
+                    <p>{% contentblock summary_where_to_stay no-convert %}</p>
+                    <div class="page-cta">
+                        <a class="btn btn-primary" href="#">{% contentblock cta_where_to_stay no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,10 +45,10 @@
 
     <section id="map" data-map="rio" style="height: 400px;"></section>
 
-    <section class="page-3columns container">
+    <section class="page-3columns container page-section">
         <div class="row">
             <div class="col-xs-12 col-sm-12">
-                <h2>{% contentblock subtitle_things_to_do %}</h2>
+                <h2 class="page-subtitle">{% contentblock subtitle_things_to_do no-convert %}</h2>
             </div>
         </div>
         <div class="row">
@@ -51,8 +58,8 @@
                     <source srcset="{{site.baseurl}}/assets/img/{{page.images2[1]}}" media="(min-width: 1200px)">
                     <img src="{{site.baseurl}}/assets/img/{{page.images[2]}}" alt="Dive">
                 </picture>
-                <h2 class="page-subtitle">{% contentblock things_to_do_subtitle_1 %}</h2>
-                <p>{% contentblock things_to_do_section_1 %}</p>
+                <h2 class="page-subtitle">{% contentblock things_to_do_subtitle_1 no-convert %}</h2>
+                <p>{% contentblock things_to_do_section_1 no-convert %}</p>
             </div>
             <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                 <picture>
@@ -60,8 +67,8 @@
                     <source srcset="{{site.baseurl}}/assets/img/{{page.images3[1]}}" media="(min-width: 1200px)">
                     <img src="{{site.baseurl}}/assets/img/{{page.images3[2]}}" alt="Dive">
                 </picture>
-                <h2 class="page-subtitle">{% contentblock things_to_do_subtitle_2 %}</h2>
-                <p>{% contentblock things_to_do_section_2 %}</p>
+                <h2 class="page-subtitle">{% contentblock things_to_do_subtitle_2 no-convert %}</h2>
+                <p>{% contentblock things_to_do_section_2 no-convert %}</p>
             </div>
             <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                 <picture>
@@ -69,13 +76,33 @@
                     <source srcset="{{site.baseurl}}/assets/img/{{page.images4[1]}}" media="(min-width: 1200px)">
                     <img src="{{site.baseurl}}/assets/img/{{page.images4[2]}}" alt="Dive">
                 </picture>
-                <h2 class="page-subtitle">{% contentblock things_to_do_subtitle_3 %}</h2>
-                <p>{% contentblock things_to_do_section_3 %}</p>
+                <h2 class="page-subtitle">{% contentblock things_to_do_subtitle_3 no-convert %}</h2>
+                <p>{% contentblock things_to_do_section_3 no-convert %}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 page-cta">
+                <a class="btn btn-primary" href="#">{% contentblock cta_section_things_to_do no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section-bg-photo {{page.css-class-where-to-stay}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="page-content-overlay">
+                        <h2 class="page-subtitle">{% contentblock where_to_stay_subtitle no-convert %} </h2>
+                        <p>{% contentblock where_to_stay_content no-convert %} </p>
+                        <div class="page-cta">
+                            <a class="btn btn-primary" href="#">{% contentblock where_to_stay_cta no-convert %} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </main>
-<script async defer src="{{site.baseurl}}/assets/js/maps.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMlNOTz98gOX5e2uU90hpl8Cl0Sp3q_g4&callback=initMap">
 </script>

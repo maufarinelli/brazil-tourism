@@ -41,7 +41,38 @@ img {
   padding-bottom: $vertical-margin;
 }
 
+
+// Page utilities
 .container-blue {
   background-color: $brand-darkblue;
   color: $component-active-color;
+}
+
+.page-subtitle {
+  text-align: center;
+}
+
+.page-cta {
+  text-align: center;
+
+  a p {
+    margin-bottom: 0;
+  }
+}
+
+.page-section {
+  padding: 30px 0;
+}
+
+.page-section-bg-photo {
+  height: $page-section-bg-photo-height;
+
+  .page-content-overlay {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: $body-bg;
+  }
 }

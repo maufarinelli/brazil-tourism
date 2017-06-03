@@ -20,6 +20,8 @@ images4:
 - sailing-brasil-350x234.jpg
 - sailing-brasil-500x334.jpg
 
+css-class-where-to-stay: where-to-stay-rio
+
 ---
 
 {% translate_file rio-de-janeiro.md %}

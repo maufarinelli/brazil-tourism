@@ -7,6 +7,8 @@
 }
 
 .page-submenu {
+  padding-top: 50px;
+
   .page-submenu-icon {
     display: block;
     text-align: center;
@@ -26,14 +28,10 @@
       padding-top: 18px;
     }
   }
+}
 
-  .page-subtitle {
-    text-align: center;
-  }
-
-  .page-submenu-cta {
-    p {
-      margin-bottom: 0;
-    }
+.page-section-bg-photo {
+  &.where-to-stay-rio {
+    background-image: url(/assets/img/villa-dos-corais-morro-de-saulo-1920.jpg);
   }
 }

@@ -60,3 +60,21 @@ Sailing
 {% contentfor things_to_do_section_3 %}
 3 (third), Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget fermentum nulla, ac mollis arcu. Praesent ornare, turpis vel consectetur imperdiet, mauris quam iaculis nisi, in lobortis purus nunc ac elit. Quisque tortor mi, euismod sed mi a, rhoncus tempus lacus.
 {% endcontentfor %}
+
+{% contentfor cta_section_things_to_do %}
+Check all the things to do
+{% endcontentfor %}
+
+
+
+{% contentfor where_to_stay_subtitle %}
+Where to stay
+{% endcontentfor %}
+
+{% contentfor where_to_stay_content %}
+Fusce ultrices maximus scelerisque. Quisque ante arcu, sollicitudin id ex at, tincidunt mattis nisl. Aliquam tincidunt rhoncus tristique. Praesent a urna id ex ultrices sollicitudin tincidunt quis nisl.
+{% endcontentfor %}
+
+{% contentfor where_to_stay_cta %}
+More
+{% endcontentfor %}
