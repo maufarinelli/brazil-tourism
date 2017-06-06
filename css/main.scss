@@ -7,9 +7,12 @@
 @import 'header';
 @import 'footer';
 
-
 img {
   max-width: 100%;
+}
+
+main {
+  padding-top: 51px;
 }
 
 @media (max-width: $screen-xs-max) {
@@ -43,6 +46,11 @@ img {
 
 
 // Page utilities
+.top_photo {
+  max-height: 450px;
+  overflow: hidden;
+}
+
 .container-blue {
   background-color: $brand-darkblue;
   color: $component-active-color;

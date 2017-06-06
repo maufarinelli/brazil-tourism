@@ -19,6 +19,23 @@ images4:
 - 600x350.png
 - 600x350.png
 
+images5:
+- 600x350.png
+- 600x350.png
+- 600x350.png
+
+images6:
+- 600x350.png
+- 600x350.png
+- 600x350.png
+
+images7:
+- 600x350.png
+- 600x350.png
+- 600x350.png
+
+steps: 5
+
 ---
 
 {% translate_file rio-de-janeiro/how-to-get-there.md %}
