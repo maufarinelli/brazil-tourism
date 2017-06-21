@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+</head>
+
+<body>
+{% include header.html %}
+<main class="page-content" aria-label="Content">
+    <section class="top_photo">
+        <img src="{{site.baseurl}}/assets/img/{{page.image1}}" alt="">
+    </section>
+
+    <section class="page-section container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <ins class="bookingaff" data-aid="1303345" data-target_aid="946247" data-prod="dfl2" data-width="100%" data-height="auto" data-dest_id="-666610" data-dest_type="city" data-df_duration="7" data-df_num_properties="7">
+                    <!-- Anything inside will go away once widget is loaded. -->
+                    <a href="//www.booking.com?aid=946247">Booking.com</a>
+                </ins>
+                <script type="text/javascript">
+                    (function(d, sc, u) {
+                        var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.src = u + '?v=' + (+new Date());
+                        p.parentNode.insertBefore(s,p);
+                    })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+                </script>
+            </div>
+        </div>
+    </section>
+</main>
+{% include footer.html %}
+</body>
+</html>
